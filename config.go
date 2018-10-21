@@ -14,8 +14,7 @@ type ViewConfig struct {
 // FileServerConfig provides configuration options for
 // starting a file server
 type FileServerConfig struct {
-	Root     string
-	BasePath string
+	Root, BasePath string
 }
 
 // SessionConfig provides configuration options for

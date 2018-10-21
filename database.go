@@ -129,9 +129,6 @@ func (db DB) Tx(block func(tx TX) error) error {
 
 type TX struct{ s *dbr.Tx }
 
-func x() {
-}
-
 func (db TX) Raw() *dbr.Tx                                  { return db.s }
 func (db TX) Insert(r Record) error                         { return doInsert(db.s, r) }
 func (db TX) Update(r Record) error                         { return doUpdate(db.s, r) }
