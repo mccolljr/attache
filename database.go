@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/gocraft/dbr"
 	"github.com/attache/attache/filter"
+	"github.com/gocraft/dbr"
 )
 
 var ErrRecordNotFound = dbr.ErrNotFound

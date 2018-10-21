@@ -8,7 +8,7 @@ type DBConfig struct {
 // ViewConfig provides configuration options for initializing
 // a ViewCache
 type ViewConfig struct {
-	Root string
+	Driver, Root string
 }
 
 // FileServerConfig provides configuration options for
